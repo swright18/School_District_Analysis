@@ -21,10 +21,14 @@ In this analysis, data from 15 schools and 39,170 students in the school distric
 
 
 #### First Analysis  Results
-###### District Summary![Per_school_analysis_1](https://user-images.githubusercontent.com/79758494/114315899-b244fd80-9ac6-11eb-9e93-a3a2798b2251.PNG)
-###### Student Score by School Size![score_by_school_size_1](https://user-images.githubusercontent.com/79758494/114315904-b709b180-9ac6-11eb-9004-038eee860cca.PNG)
-###### Student Score by School Type![score_by_school_type_1](https://user-images.githubusercontent.com/79758494/114315908-b8d37500-9ac6-11eb-9c02-f17711890f8c.PNG)
-###### Student Score by Average Spending per Student![spending_per_student_1](https://user-images.githubusercontent.com/79758494/114315911-ba04a200-9ac6-11eb-9b29-3799f5394636.PNG)
+###### District Summary
+![Per_school_analysis_1](https://user-images.githubusercontent.com/79758494/114315899-b244fd80-9ac6-11eb-9e93-a3a2798b2251.PNG)
+###### Student Score by School Size
+![score_by_school_size_1](https://user-images.githubusercontent.com/79758494/114315904-b709b180-9ac6-11eb-9004-038eee860cca.PNG)
+###### Student Score by School Type
+![score_by_school_type_1](https://user-images.githubusercontent.com/79758494/114315908-b8d37500-9ac6-11eb-9c02-f17711890f8c.PNG)
+###### Student Score by Average Spending per Student
+![spending_per_student_1](https://user-images.githubusercontent.com/79758494/114315911-ba04a200-9ac6-11eb-9b29-3799f5394636.PNG)
  
 #### Second Analysis and  Results
 	To begin the analysis, we first had to import our dependencies, call the file 
