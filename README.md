@@ -21,13 +21,17 @@ In this analysis, data from 15 schools and 39,170 students in the school distric
 
 
 #### First Analysis  Results
-###### District Summary![Per_school_analysis_1](https://user-images.githubusercontent.com/79758494/114315899-b244fd80-9ac6-11eb-9e93-a3a2798b2251.PNG)
+###### District Summary
+![Per_school_analysis_1](https://user-images.githubusercontent.com/79758494/114315899-b244fd80-9ac6-11eb-9e93-a3a2798b2251.PNG)
 
-###### Student Score by School Size![score_by_school_size_1](https://user-images.githubusercontent.com/79758494/114315904-b709b180-9ac6-11eb-9004-038eee860cca.PNG)
+###### Student Score by School Size
+![score_by_school_size_1](https://user-images.githubusercontent.com/79758494/114315904-b709b180-9ac6-11eb-9004-038eee860cca.PNG)
 
-###### Student Score by School Type![score_by_school_type_1](https://user-images.githubusercontent.com/79758494/114315908-b8d37500-9ac6-11eb-9c02-f17711890f8c.PNG)
+###### Student Score by School Type
+![score_by_school_type_1](https://user-images.githubusercontent.com/79758494/114315908-b8d37500-9ac6-11eb-9c02-f17711890f8c.PNG)
 
-###### Student Score by Average Spending per Student![spending_per_student_1](https://user-images.githubusercontent.com/79758494/114315911-ba04a200-9ac6-11eb-9b29-3799f5394636.PNG)
+###### Student Score by Average Spending per Student
+![spending_per_student_1](https://user-images.githubusercontent.com/79758494/114315911-ba04a200-9ac6-11eb-9b29-3799f5394636.PNG)
 
  
 #### Second Analysis and  Results
@@ -119,11 +123,10 @@ In this analysis, data from 15 schools and 39,170 students in the school distric
 
 #### Final Results
 
-    
-   -   How is the district summary affected?
-		-  During the analysis, after  the "student_data_df" and "school_data_df" were merged, the total count for students was created. That count was 39,170 students. We then calculated a new student score by finding the total number of ninth graders at Thomas High School and subtractin that from our above student count of 39,170. The result was 38,709 students. This is the number moving forward used to calculate new student counts and percentages. 
+ - How is the district summary affected?
+	-During the analysis, after  the "student_data_df" and "school_data_df" were merged, the total count for students was created. That count was 39,170 students. We then calculated a new student score by finding the total number of ninth graders at Thomas High School and subtracting that from our above student count of 39,170. The result was 38,709 students. This is the number moving forward used to calculate new student counts and percentages. 
 	    
-    -   How is the school summary affected?
+- How is the school summary affected?
 	    - Below are the school summaries. The first is the school summary that includes ninth graders at Thomas High School and the second is the school summary after all scores for ninth graders at Thomas High School have been removed.  Specifically looking at the last three columns, which are, respectively, Percent Passed Math, Percent Passed Reading and Overall Percent passed. As shown below, there was a dramatic increase in each of the percentages of passing scores across the board. 
 
 ![THS_1](https://user-images.githubusercontent.com/79758494/114320229-9c413800-9ada-11eb-81b9-6dfaca39b90c.PNG)
@@ -131,38 +134,38 @@ In this analysis, data from 15 schools and 39,170 students in the school distric
 ![THS_2](https://user-images.githubusercontent.com/79758494/114320230-9c413800-9ada-11eb-91de-746c45e9f9c9.PNG)
 
 - How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-	- Compared to other schools, with the 9th grade scores removed, Thomas High School has the second highest overall passing percentage, at 90.6%. If the 9th graders scores had not been removed, Thomas High School would have been in the bottom five performing schools with a 65.1% overall passing. 
+	-Compared to other schools, with the 9th grade scores removed, Thomas High School has the second highest overall passing percentage, at 90.6%. If the 9th graders scores had not been removed, Thomas High School would have been in the bottom five performing schools with a 65.1% overall passing. 
 
 - How does replacing the ninth-grade scores affect the following:
 	- Math and reading scores by grade: 
-		- Replacing the ninth-grades scores only affects the math and reading score by grade by replacing the 9th grade at Thomas High School score with "nan", as seen below in the Math and Reading scores by grade DataFrame.
+		-Replacing the ninth-grades scores only affects the math and reading score by grade by replacing the 9th grade at Thomas High School score with "nan", as seen below in the Math and Reading scores by grade DataFrame.
 			![Reading](https://user-images.githubusercontent.com/79758494/114320876-b892a400-9add-11eb-9ef3-a2052fc07c04.PNG)
 ![Math](https://user-images.githubusercontent.com/79758494/114320877-b892a400-9add-11eb-8948-0dff2f09aa73.PNG)
 
      -   Scores by school spending
-	        - If we were to run the data without updating the data and not including the 9th graders scores at Thomas High School, the result would be the image below:
+	        -If we were to run the data without updating the data and not including the 9th graders scores at Thomas High School, the result would be the image below:
  ![Spending_`](https://user-images.githubusercontent.com/79758494/114321145-d8769780-9ade-11eb-8aa8-88d46d099ed5.PNG)
  
-			 - After removing the 9th graders scores at Thomas High School, the Scores by school spending looks as follows. 
+			-After removing the 9th graders scores at Thomas High School, the Scores by school spending looks as follows. 
 ![Spending 2](https://user-images.githubusercontent.com/79758494/114320982-3fe01780-9ade-11eb-90fb-513ba535e795.PNG)
 
-			- Thomas High School has an average student spending of $638.00. They fall into the third row ($630-644). This specific index saw a significant increase in %Passing Math, %Passing Reading, and %Overall Passing, each increasing by 6-7%. 
+			-Thomas High School has an average student spending of $638.00. They fall into the third row ($630-644). This specific index saw a significant increase in %Passing Math, %Passing Reading, and %Overall Passing, each increasing by 6-7%. 
         -   Scores by school size
-	        - The data including the 9th graders at Thomas High School shows the following: ![before_1](https://user-images.githubusercontent.com/79758494/114321372-23dd7580-9ae0-11eb-961d-6ed6709c6550.PNG)
+	        -The data including the 9th graders at Thomas High School shows the following: ![before_1](https://user-images.githubusercontent.com/79758494/114321372-23dd7580-9ae0-11eb-961d-6ed6709c6550.PNG)
 	        
-	        - Once we remove the scores for the 9th graders at Thomas High School, the output looks as follows: 
+	        -Once we remove the scores for the 9th graders at Thomas High School, the output looks as follows: 
 ![After_1](https://user-images.githubusercontent.com/79758494/114321373-26d86600-9ae0-11eb-865b-dae1fe0b7501.PNG)
 
-			- Thomas High School has a student population of 1,635 and fall within the "Medium" index. Again, when it comes to the last three columns of data, there was a significant increase in the percentage of students that passed math, reading, and overall. There was a 6% increase throughout each. 
+			-Thomas High School has a student population of 1,635 and fall within the "Medium" index. Again, when it comes to the last three columns of data, there was a significant increase in the percentage of students that passed math, reading, and overall. There was a 6% increase throughout each. 
 
         -   Scores by school type
-	        - As with above, the first Database shows all the data including the 9th graders at Thomas High School. The second shows the data after all the scores for the 9th graders at Thomas High School were removed (set as NaN). 
+	        -As with above, the first Database shows all the data including the 9th graders at Thomas High School. The second shows the data after all the scores for the 9th graders at Thomas High School were removed (set as NaN). 
 
 ![Before_2](https://user-images.githubusercontent.com/79758494/114321375-293ac000-9ae0-11eb-82ad-fceb80e4ae0a.PNG)
 
 ![After_2](https://user-images.githubusercontent.com/79758494/114321380-2c35b080-9ae0-11eb-839f-e184dd6fdd4b.PNG)
 
-- Thomas High School is categorized as a Charter School. As the trend shows, the percentage of passing scores in Math, Reading and overall increased by 3-4%. 
+-Thomas High School is categorized as a Charter School. As the trend shows, the percentage of passing scores in Math, Reading and overall increased by 3-4%. 
 
 ## Summary
 It is believed that the 9th grade scores for reading and math were presented with academic dishonestly. If this is the case, that academic dishonestly could have had a large impact on how the school board and superintendent would move forward with funding and programming. This is evidenced by a few things. 
